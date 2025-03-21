@@ -3,7 +3,7 @@ variable "ec2name" {
 }
 
 resource "aws_instance" "ec2" {
-    ami = "ami-032598fcc7e9d1c7a"
+    ami = "ami-01eb4eefd88522422"
     instance_type = "t2.micro"
     tags = {
         Name = var.ec2name

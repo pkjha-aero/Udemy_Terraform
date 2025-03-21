@@ -28,7 +28,7 @@ resource "aws_security_group" "web_traffic" {
         }
     }
 
-        dynamic "egress" {
+    dynamic "egress" {
         iterator = port
         for_each = var.egress
         content {
